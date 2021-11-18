@@ -1,0 +1,57 @@
+{
+    "Main" : {
+        "uid" : {
+            "type" : "UID",
+            "config" : {
+                "label" : "Notfound"
+            }
+        },
+        "background_image" : {
+            "type" : "Image",
+            "config" : {
+                "constraint" : { },
+                "thumbnails" : [ {
+                    "name" : "mobile",
+                    "width" : 540,
+                    "height" : 1024
+                } ],
+                "label" : "background_image"
+            }
+        },
+        "title_errormessage_popup" : {
+            "type" : "StructuredText",
+            "config" : {
+                "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                "label" : "title_errormessage_popup"
+            }
+        },
+        "title_popup" : {
+            "type" : "StructuredText",
+            "config" : {
+                "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                "label" : "title_popup"
+            }
+        },
+        "text_information_popup" : {
+            "type" : "StructuredText",
+            "config" : {
+                "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                "label" : "text_information_popup"
+            }
+        },
+        "text_cta_popup" : {
+            "type" : "StructuredText",
+            "config" : {
+                "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                "label" : "text_cta_popup"
+            }
+        },
+        "link_cta_popup" : {
+            "type" : "Link",
+            "config" : {
+                "label" : "link_cta_popup",
+                "select" : null
+            }
+        }
+    }
+}

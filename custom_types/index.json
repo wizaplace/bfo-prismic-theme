@@ -1,0 +1,31 @@
+[{
+    "id": "contenttype",
+    "name": "Content type",
+    "repeatable": true,
+    "value": "contenttype.json"
+}, {
+    "id": "footer",
+    "name": "Footer",
+    "repeatable": false,
+    "value": "footer.json"
+}, {
+    "id": "header",
+    "name": "Header",
+    "repeatable": false,
+    "value": "header.json"
+}, {
+    "id": "home",
+    "name": "Home",
+    "repeatable": false,
+    "value": "home.json"
+}, {
+    "id": "notfound",
+    "name": "Not found",
+    "repeatable": false,
+    "value": "notfound.json"
+}, {
+    "id": "richpage",
+    "name": "Rich page",
+    "repeatable": true,
+    "value": "richpage.json"
+}]

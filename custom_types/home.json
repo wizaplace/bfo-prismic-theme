@@ -1,0 +1,229 @@
+{
+    "Main" : {
+        "uid" : {
+            "type" : "UID",
+            "config" : {
+                "label" : "Home"
+            }
+        },
+        "slider" : {
+            "type" : "Group",
+            "config" : {
+                "fields" : {
+                    "image_slide" : {
+                        "type" : "Image",
+                        "config" : {
+                            "constraint" : { },
+                            "thumbnails" : [ {
+                                "name" : "mobile",
+                                "width" : 1024,
+                                "height" : 540
+                            } ],
+                            "label" : "Slider_Image"
+                        }
+                    },
+                    "title_slide" : {
+                        "type" : "StructuredText",
+                        "config" : {
+                            "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                            "label" : "Title_Slide"
+                        }
+                    },
+                    "text_slide" : {
+                        "type" : "StructuredText",
+                        "config" : {
+                            "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                            "label" : "Text_Slide"
+                        }
+                    },
+                    "link_slide" : {
+                        "type" : "Link",
+                        "config" : {
+                            "label" : "Link_Slide",
+                            "select" : null
+                        }
+                    },
+                    "link_title_slide" : {
+                        "type" : "StructuredText",
+                        "config" : {
+                            "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                            "label" : "Link_Title_Slide"
+                        }
+                    }
+                },
+                "label" : "Slider"
+            }
+        },
+        "body" : {
+            "type" : "Slices",
+            "fieldset" : "Slice zone",
+            "config" : {
+                "labels" : { },
+                "choices" : {
+                    "marques" : {
+                        "type" : "Slice",
+                        "fieldset" : "Brands",
+                        "description" : "Brands slice",
+                        "icon" : "brightness_5",
+                        "display" : "list",
+                        "non-repeat" : {
+                            "title_brands" : {
+                                "type" : "StructuredText",
+                                "config" : {
+                                    "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                                    "label" : "Title_Brands"
+                                }
+                            }
+                        },
+                        "repeat" : {
+                            "image_brand" : {
+                                "type" : "Image",
+                                "config" : {
+                                    "constraint" : { },
+                                    "thumbnails" : [ ],
+                                    "label" : "Image_Brand"
+                                }
+                            },
+                            "link_brand" : {
+                                "type" : "Link",
+                                "config" : {
+                                    "label" : "Link_brand",
+                                    "allowTargetBlank" : true,
+                                    "select" : null
+                                }
+                            }
+                        }
+                    },
+                    "engagements" : {
+                        "type" : "Slice",
+                        "fieldset" : "Values",
+                        "description" : "Values slide",
+                        "icon" : "account_balance",
+                        "display" : "list",
+                        "non-repeat" : { },
+                        "repeat" : {
+                            "title_value" : {
+                                "type" : "StructuredText",
+                                "config" : {
+                                    "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                                    "label" : "Title_Value"
+                                }
+                            },
+                            "text_value" : {
+                                "type" : "StructuredText",
+                                "config" : {
+                                    "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                                    "label" : "Text_value"
+                                }
+                            }
+                        }
+                    },
+                    "vendor" : {
+                        "type" : "Slice",
+                        "fieldset" : "Vendor",
+                        "description" : "Vendor slice",
+                        "icon" : "accessibility",
+                        "display" : "list",
+                        "non-repeat" : {
+                            "title_vendor" : {
+                                "type" : "StructuredText",
+                                "config" : {
+                                    "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                                    "label" : "Title_vendor"
+                                }
+                            },
+                            "text_vendor" : {
+                                "type" : "StructuredText",
+                                "config" : {
+                                    "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                                    "label" : "Text_vendor"
+                                }
+                            },
+                            "link_vendor" : {
+                                "type" : "Link",
+                                "config" : {
+                                    "label" : "Link_vendor",
+                                    "allowTargetBlank" : true,
+                                    "select" : null
+                                }
+                            },
+                            "image_vendor" : {
+                                "type" : "Image",
+                                "config" : {
+                                    "constraint" : { },
+                                    "thumbnails" : [ ],
+                                    "label" : "Image_vendor"
+                                }
+                            }
+                        },
+                        "repeat" : { }
+                    },
+                    "disclaimer" : {
+                        "type" : "Slice",
+                        "fieldset" : "Disclaimer",
+                        "description" : "Disclaimer slice",
+                        "icon" : "extension",
+                        "display" : "list",
+                        "non-repeat" : {
+                            "title_disclaimer" : {
+                                "type" : "StructuredText",
+                                "config" : {
+                                    "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                                    "label" : "Title_disclaimer"
+                                }
+                            },
+                            "text_disclaimer" : {
+                                "type" : "StructuredText",
+                                "config" : {
+                                    "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                                    "label" : "Text_disclaimer"
+                                }
+                            },
+                            "link_disclaimer" : {
+                                "type" : "Link",
+                                "config" : {
+                                    "label" : "Link_disclaimer",
+                                    "select" : null
+                                }
+                            },
+                            "link_title_disclaimer" : {
+                                "type" : "StructuredText",
+                                "config" : {
+                                    "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                                    "label" : "Link_Title_Disclaimer"
+                                }
+                            },
+                            "image_disclaimer" : {
+                                "type" : "Image",
+                                "config" : {
+                                    "constraint" : { },
+                                    "thumbnails" : [ ],
+                                    "label" : "Image_disclaimer"
+                                }
+                            }
+                        },
+                        "repeat" : { }
+                    },
+                    "code" : {
+                        "type" : "Slice",
+                        "fieldset" : "Code",
+                        "description" : "Slice managed by code",
+                        "icon" : "local_florist",
+                        "display" : "list",
+                        "non-repeat" : {
+                            "value_code_slice" : {
+                                "type" : "Select",
+                                "config" : {
+                                    "options" : [ "categories", "top_products" ],
+                                    "default_value" : "categories",
+                                    "label" : "Code slice"
+                                }
+                            }
+                        },
+                        "repeat" : { }
+                    }
+                }
+            }
+        }
+    }
+}

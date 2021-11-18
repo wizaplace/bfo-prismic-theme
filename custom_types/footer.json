@@ -1,0 +1,115 @@
+{
+    "Main" : {
+        "uid" : {
+            "type" : "UID",
+            "config" : {
+                "label" : "footer"
+            }
+        },
+        "title_contact_block" : {
+            "type" : "StructuredText",
+            "config" : {
+                "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                "label" : "title_contact_block"
+            }
+        },
+        "richtext_contact_block" : {
+            "type" : "StructuredText",
+            "config" : {
+                "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                "label" : "richtext_contact_block"
+            }
+        },
+        "title_social_block" : {
+            "type" : "StructuredText",
+            "config" : {
+                "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                "label" : "title_social_block"
+            }
+        },
+        "social" : {
+            "type" : "Group",
+            "config" : {
+                "fields" : {
+                    "image_social" : {
+                        "type" : "Image",
+                        "config" : {
+                            "constraint" : { },
+                            "thumbnails" : [ ],
+                            "label" : "image_social"
+                        }
+                    },
+                    "title_social" : {
+                        "type" : "StructuredText",
+                        "config" : {
+                            "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                            "label" : "title_social"
+                        }
+                    },
+                    "link_social" : {
+                        "type" : "Link",
+                        "config" : {
+                            "label" : "link_social",
+                            "select" : null
+                        }
+                    }
+                },
+                "label" : "social"
+            }
+        },
+        "logo" : {
+            "type" : "Image",
+            "config" : {
+                "constraint" : {
+                    "width" : null,
+                    "height" : null
+                },
+                "thumbnails" : [ ],
+                "label" : "logo"
+            }
+        },
+        "body" : {
+            "type" : "Slices",
+            "fieldset" : "Slice zone",
+            "config" : {
+                "labels" : {
+                    "block_link" : [ ]
+                },
+                "choices" : {
+                    "block_link" : {
+                        "type" : "Slice",
+                        "fieldset" : "block_link",
+                        "description" : "Bloc link",
+                        "icon" : "insert_link",
+                        "display" : "list",
+                        "non-repeat" : {
+                            "title_block_link" : {
+                                "type" : "StructuredText",
+                                "config" : {
+                                    "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                                    "label" : "title_block_link"
+                                }
+                            }
+                        },
+                        "repeat" : {
+                            "title_link" : {
+                                "type" : "StructuredText",
+                                "config" : {
+                                    "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                                    "label" : "title_link"
+                                }
+                            },
+                            "link_link" : {
+                                "type" : "Link",
+                                "config" : {
+                                    "label" : "link_link",
+                                    "select" : null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
