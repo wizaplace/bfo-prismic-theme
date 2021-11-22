@@ -3,7 +3,9 @@ Prismic theme contains the prismic custom-types shared by bfo users
 Follow the instructions below to create a prismic repo for a new BFO instance
 
 ### prerequis
-recommended node version 16.13.0
+- create a new prismic account for the client
+- create a new mail address or gmail alias for the client and add this email to the prismic users
+- recommended node version 16.13.0
 
 ### install prismic cli 
     npm install -g prismic-cli
