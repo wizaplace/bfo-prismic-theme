@@ -1,8 +1,8 @@
 [{
-    "id": "contenttype",
-    "name": "Content type",
+    "id": "contentpage",
+    "name": "Content page",
     "repeatable": true,
-    "value": "contenttype.json"
+    "value": "contentpage.json"
 }, {
     "id": "footer",
     "name": "Footer",

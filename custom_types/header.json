@@ -1,54 +1,54 @@
 {
-    "Main" : {
-        "uid" : {
-            "type" : "UID",
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "header"
+      }
+    },
+    "right" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "text" : {
+            "type" : "StructuredText",
             "config" : {
-                "label" : "header"
+              "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+              "label" : "text"
             }
+          },
+          "link" : {
+            "type" : "Link",
+            "config" : {
+              "label" : "link",
+              "select" : null
+            }
+          }
         },
-        "right" : {
-            "type" : "Group",
+        "label" : "right"
+      }
+    },
+    "middle" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "text" : {
+            "type" : "StructuredText",
             "config" : {
-                "fields" : {
-                    "text" : {
-                        "type" : "StructuredText",
-                        "config" : {
-                            "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
-                            "label" : "text"
-                        }
-                    },
-                    "link" : {
-                        "type" : "Link",
-                        "config" : {
-                            "label" : "link",
-                            "select" : null
-                        }
-                    }
-                },
-                "label" : "right"
+              "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+              "label" : "text"
             }
+          },
+          "link" : {
+            "type" : "Link",
+            "config" : {
+              "label" : "link",
+              "select" : null
+            }
+          }
         },
-        "middle" : {
-            "type" : "Group",
-            "config" : {
-                "fields" : {
-                    "text" : {
-                        "type" : "StructuredText",
-                        "config" : {
-                            "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
-                            "label" : "text"
-                        }
-                    },
-                    "link" : {
-                        "type" : "Link",
-                        "config" : {
-                            "label" : "link",
-                            "select" : null
-                        }
-                    }
-                },
-                "label" : "middle"
-            }
-        }
+        "label" : "middle"
+      }
     }
+  }
 }

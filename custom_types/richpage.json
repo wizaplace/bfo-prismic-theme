@@ -1,24 +1,64 @@
 {
-    "Main" : {
-        "uid" : {
-            "type" : "UID",
-            "config" : {
-                "label" : "richpage"
-            }
-        },
-        "title_richpage" : {
-            "type" : "StructuredText",
-            "config" : {
-                "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
-                "label" : "title_richpage"
-            }
-        },
-        "text_richpage" : {
-            "type" : "StructuredText",
-            "config" : {
-                "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-                "label" : "text_richpage"
-            }
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "richpage"
+      }
+    },
+    "title_page_seo" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "paragraph",
+        "label" : "title_page_seo"
+      }
+    },
+    "description_page_seo" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "paragraph",
+        "label" : "description_page_seo"
+      }
+    },
+    "title_richpage" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+        "label" : "title_richpage"
+      }
+    },
+    "text_richpage" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+        "label" : "text_richpage"
+      }
+    },
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : null,
+        "choices" : {
+          "richtext" : {
+            "type" : "Slice",
+            "fieldset" : "RichText",
+            "description" : "Rich text slice",
+            "icon" : "title",
+            "display" : "list",
+            "non-repeat" : {
+              "text_richtext_content" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label" : "text_richtext_content"
+                }
+              }
+            },
+            "repeat" : { }
+          }
         }
+      }
     }
+  }
 }
