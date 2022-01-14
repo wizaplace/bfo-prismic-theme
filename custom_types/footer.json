@@ -39,13 +39,6 @@
               "label" : "image_social"
             }
           },
-          "title_social" : {
-            "type" : "StructuredText",
-            "config" : {
-              "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
-              "label" : "title_social"
-            }
-          },
           "link_social" : {
             "type" : "Link",
             "config" : {

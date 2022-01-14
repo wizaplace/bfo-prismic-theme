@@ -178,39 +178,6 @@
               }
             }
           },
-          "carousel" : {
-            "type" : "Slice",
-            "fieldset" : "Carousel",
-            "description" : "Carousel",
-            "icon" : "autorenew",
-            "display" : "list",
-            "non-repeat" : {
-              "title_carousel" : {
-                "type" : "StructuredText",
-                "config" : {
-                  "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
-                  "label" : "title_carousel"
-                }
-              },
-              "text_carousel" : {
-                "type" : "StructuredText",
-                "config" : {
-                  "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-                  "label" : "text_carousel"
-                }
-              }
-            },
-            "repeat" : {
-              "image_carousel" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "image_carousel"
-                }
-              }
-            }
-          },
           "disclaimer" : {
             "type" : "Slice",
             "fieldset" : "Disclaimer",

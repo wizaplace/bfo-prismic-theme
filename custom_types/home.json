@@ -27,7 +27,10 @@
           "image_slide" : {
             "type" : "Image",
             "config" : {
-              "constraint" : { },
+              "constraint" : {
+                "width" : null,
+                "height" : null
+              },
               "thumbnails" : [ {
                 "name" : "mobile",
                 "width" : 1024,
@@ -178,7 +181,10 @@
               "image_disclaimer" : {
                 "type" : "Image",
                 "config" : {
-                  "constraint" : { },
+                  "constraint" : {
+                    "width" : null,
+                    "height" : null
+                  },
                   "thumbnails" : [ ],
                   "label" : "Image_disclaimer"
                 }
